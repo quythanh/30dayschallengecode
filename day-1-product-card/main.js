@@ -1,1 +1,1 @@
-document.querySelector('.card__heart').addEventListener('click', e => ['color--red', 'bx-heart', 'bxs-heart'].map(c => e.target.classList.toggle(c)))
+document.querySelector('.bx').addEventListener('click', e => ['color--red', 'bx-heart', 'bxs-heart'].map(c => e.target.classList.toggle(c)))
