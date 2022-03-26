@@ -8,6 +8,11 @@ const projects = [
         "day": 2,
         "title": "Profile Card",
         "src": "day-2-profile-card"
+    },
+    {
+        "day": 3,
+        "title": "Modal",
+        "src": "day-3-modal"
     }
 ]
 
