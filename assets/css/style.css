@@ -11,8 +11,8 @@
 
 html {
     font-size: 62.5%;
-    overflow-y: hidden;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
 }
 
 body {
@@ -41,6 +41,7 @@ body {
     position: relative;
     border-radius: 10px;
     height: 370px;
+    width: calc(100% * (1/4) - 10px - 1px);
 }
 
 .project__day {
