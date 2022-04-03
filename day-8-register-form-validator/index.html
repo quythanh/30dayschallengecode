@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form Validator</title>
+    <link rel="shortcut icon" type="image/png" href="https://quythanh.github.io/assets/images/favicon.png" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <h1 class="container__title">Register</h1>
+            <form class="container__form" autocomplete="off">
+                <div class="form-control">
+                    <input type="text" class="form__input" placeholder="Username" id="username">
+                    <div class="form__line"></div>
+                    <div class="form__error"></div>
+                </div>
+                <div class="form-control">
+                    <input type="email" class="form__input" placeholder="Email" id="email">
+                    <div class="form__line"></div>
+                    <div class="form__error"></div>
+                </div>
+                <div class="form-control">
+                    <input type="password" class="form__input" placeholder="Password" id="password">
+                    <div class="form__line"></div>
+                    <div class="form__error"></div>
+                </div>
+                <div class="form-control">
+                    <input type="password" class="form__input" placeholder="Confirm Password" id="confirmPassword">
+                    <div class="form__line"></div>
+                    <div class="form__error"></div>
+                </div>
+                <button type="submit" class="form__btn">Login</button>
+                <div class="sign-up">
+                    Not a member?
+                    <a href="#">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
