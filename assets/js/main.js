@@ -10,9 +10,9 @@ fetch('./assets/data/projects.json')
                     ${project}
                 </div>
                 <div class="project__redirect">
-                    <a href="./day-${index + 1}-${project.toLowerCase().split(' ').join('-')}/" class="project__btn" target="_blank">Live Demo</a>
+                    <a href="./day-${index + 1}-${project.replaceAll(' ', '-')}/" class="project__btn" target="_blank">Live Demo</a>
                     <a
-                        href="https://github.com/quythanh/30dayschallengecode/tree/main/day-${index + 1}-${project.toLowerCase().split(' ').join('-')}"
+                        href="https://github.com/quythanh/30dayschallengecode/tree/main/day-${index + 1}-${project.replaceAll(' ', '-')}"
                         class="project__btn"
                         target="_blank"
                     >Source Code</a>
