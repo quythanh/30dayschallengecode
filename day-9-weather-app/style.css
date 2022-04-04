@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+body.hot {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, 1)), url("./hot.png") no-repeat center/cover;
+}
+
+body.cold {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, 1)), url("./cold.png") no-repeat center/cover;
+}
+
+body.hot #weather {
+    background-image: url("./hot.png");
+}
+
+body.cold #weather {
+    background-image: url("./cold.png");
+}
+
+#app {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#weather {
+    min-width: 350px;
+    height: 600px;
+    background: no-repeat center/cover;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.search {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 19px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .2);
+    border: none;
+    outline: none;
+    border-radius: 0px 15px 0 15px;
+    margin-bottom: 40px;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.search:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px 0 15px 0;
+}
+
+.content {
+    color: #fff;
+}
+
+.name {
+    font-size: 35px;
+    white-space: nowrap;
+    text-shadow: 2px 2px rgba(0, 0, 0, .5);
+}
+
+.time {
+    font-size: 15px;
+    margin: 6px 0;
+}
+
+.temperature {
+    font-size: 65px;
+    text-shadow: 4px 4px rgba(0, 0, 0, .6);
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 15px;
+    box-shadow: 2px 2px 0 2px rgba(0, 0, 0, .5);
+    margin: 20px 0 30px;
+    font-weight: 800;
+}
+
+.short-desc {
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 3px 3px rgba(0, 0, 0, .4);
+}
+
+.more-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.more-desc > div {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hide {
+    visibility: hidden;
+}
