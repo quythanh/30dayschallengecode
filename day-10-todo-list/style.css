@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #ffe000, #799f0c);
+    user-select: none;
+}
+
+.container {
+    width: 400px;
+    background-color: #fff;
+    margin: 100px auto;
+    border-radius: 6px;
+}
+
+.form {
+    padding: 10px 20px 10px 0;
+    display: flex;
+    border-bottom: 1px solid #aaa;
+}
+
+.form__input {
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    width: 100%;
+    font-size: 24px;
+    color: #444;
+}
+
+.form__btn {
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 6px;
+    background: yellowgreen;
+}
+
+.todos {
+    list-style: none;
+}
+
+.task {
+    cursor: pointer;
+    font-size: 22px;
+    padding: 15px 22px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e5e5e5;
+}
+
+.task__content {
+    overflow: hidden;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+}
+
+.task.completed .task__content {
+    color: #b6b6b6;
+    text-decoration: line-through;
+}
+
+.task i {
+    opacity: 0;
+    color: #aaa;
+    transition: .2s;
+}
+
+.task:hover i {
+    opacity: 1;
+}
+
+.task:hover i:hover {
+    opacity: 1;
+    color: unset;
+}
