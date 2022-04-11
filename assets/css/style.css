@@ -20,7 +20,7 @@ body {
     height: 100vh;
 }
 
-#app {
+#root {
     margin: 10px;
 }
 
@@ -41,7 +41,7 @@ body {
     position: relative;
     border-radius: 10px;
     height: 370px;
-    width: calc(100% * (1/4) - 10px - 1px);
+    max-width: 350px;
 }
 
 .project__day {
