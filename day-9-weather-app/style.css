@@ -13,6 +13,9 @@ body {
     width: 100%;
     overflow: hidden;
     user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body.hot {
@@ -29,14 +32,6 @@ body.hot #weather {
 
 body.cold #weather {
     background-image: url("./cold.png");
-}
-
-#app {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #weather {
