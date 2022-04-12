@@ -9,7 +9,7 @@ const updateStorage = tasks => tasks ? localStorage.setItem('tasks', JSON.string
 const isExist = value => value ? todolist.map(task => task.content).indexOf(value) + 1 : 1
 
 const renderTasks = tasks => {
-    updateStorage()
+    updateStorage(tasks)
     ul.innerHTML = ''
     
     tasks.map(task => {
@@ -23,14 +23,14 @@ const renderTasks = tasks => {
             let index = isExist(this.querySelector('.task__content').innerText) - 1
             if (e.target == e.currentTarget) {
                 todolist[index].isComplete = !todolist[index].isComplete
-                updateStorage()
+                updateStorage(tasks)
                 this.classList.toggle('completed')
             }
         })
 
         li.querySelector('i').addEventListener('click', function() {
             todolist.splice(isExist(this.previousElementSibling.innerText) - 1, 1)
-            updateStorage()
+            updateStorage(tasks)
             this.parentElement.remove()
         })
 
