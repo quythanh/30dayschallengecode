@@ -22,7 +22,6 @@ body {
     background: linear-gradient(45deg, #00853e, #50c878);
     font-family: "Poppins";
     display: flex;
-    height: 100%;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
