@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview Image</title>
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png" />
+    <link rel="stylesheet" href="https://quythanh.tk/assets/css/fontawesomepro/all.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="error"></div>
+        <label for="inp__img" id="inp__label" class="preview">
+            <i class="fad fa-cloud-upload"></i>
+            Upload to preview image
+        </label>
+        <input type="file" hidden id="inp__img" accept="image/*">
+        
+        <!--
+            to limit file type
+            <input type="file" hidden id="inp__img" accept=".png, .jpg, .jpeg, .gif">
+            to upload multiple files
+            <input type="file" hidden id="inp__img" multiple>
+        -->
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
