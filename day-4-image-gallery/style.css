@@ -42,6 +42,7 @@ body {
     object-position: center;
     cursor: pointer;
     transition: .3s;
+    pointer-events: none;
 }
 
 .wrapper__image:hover img {
