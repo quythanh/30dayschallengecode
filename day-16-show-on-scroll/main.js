@@ -1,6 +1,6 @@
 function toggleElement(e) {
     var elementRect = e.getClientRects()[0],
-        screenHeight = window.innerHeight || document.documentElement.clientHeight
+        screenHeight = window.innerHeight || document.documentElement.clientHeight;
     
     (elementRect.bottom < 0 || elementRect.top > screenHeight)
         ? e.classList.remove('start')
