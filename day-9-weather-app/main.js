@@ -1,4 +1,5 @@
 const input = document.querySelector('.search')
+const apiKey = '982a3c53f94d5448a7d8c39e19711137'
 
 const changeWeatherUI = weather => {
     document.querySelector('.content').classList.remove('hide')
@@ -17,7 +18,7 @@ const changeWeatherUI = weather => {
 }
 
 const getWeather = city => {
-    let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=af1d87e31272b86db218aaa9dde3aec7`
+    let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
 
     fetch(apiURL).then(res => res.json()).then(data =>
         data.cod == 200
